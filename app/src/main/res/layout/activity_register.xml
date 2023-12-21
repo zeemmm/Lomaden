@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitetobrown"
+    android:theme="@style/Theme.LoginRegisterRelative"
+    tools:context=".RegisterActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/baseline_arrow_back"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popinsbold"
+            android:text="Daftar Akun"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="184dp"
+                android:layout_height="152dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/gambar2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_2"
+                android:text="Let’s help you meet up your tasks.  "
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:id="@+id/txt_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/txt_1"
+                android:padding="30dp"
+                android:id="@+id/ly_1">
+
+                <EditText
+                    android:drawableStart="@drawable/person"
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:padding="15dp"
+                    android:inputType="text"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ofl"
+                    android:textSize="15dp"
+                    android:hint="enter your full name"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/email"
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ofl"
+                    android:textSize="15dp"
+                    android:hint="email"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/lock"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:padding="15dp"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ofl"
+                    android:textSize="15dp"
+                    android:hint="password"/>
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/lock"
+                    android:id="@+id/password_conf"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:padding="15dp"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ofl"
+                    android:textSize="15dp"
+                    android:hint="confirm password"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ly_1"
+                android:layout_centerHorizontal="true"
+                android:width="300dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/popinsbold"
+                android:text="Register"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

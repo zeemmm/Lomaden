@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OpenActivity">
+
+    <ImageView
+        android:id="@+id/open_images"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/open_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Kosan"
+        android:textSize="23dp"
+        android:id="@+id/open_namakosan"
+        android:fontFamily="@font/popinsbold"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_below="@id/open_namakosan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-70dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/nilai_rate"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="-45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.3"/>
+        <RatingBar
+            android:outlineAmbientShadowColor="@color/background"
+            android:clickable="false"
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="3"
+            android:progressTint="@color/yellow"
+            android:scaleY="0.5"
+            android:scaleX="0.5"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_below="@id/open_namakosan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="15dp"
+            android:fontFamily="@font/popinsbold"/>
+        <TextView
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kos ini..."
+            android:textSize="15dp"
+            android:id="@+id/open_alamat"
+            android:fontFamily="@font/ofl"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/open_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="15dp"
+            android:fontFamily="@font/popinsbold"/>
+        <TextView
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/open_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kos ini..."
+            android:textSize="15dp"
+            android:id="@+id/description"
+            android:fontFamily="@font/ofl"/>
+
+        <TextView
+            android:id="@+id/fasilitas_1"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/open_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas"
+            android:textSize="15dp"
+            android:fontFamily="@font/popinsbold"/>
+        <TextView
+            android:id="@+id/fasilitas"
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/open_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas"
+            android:textSize="15dp"
+            android:fontFamily="@font/ofl"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_below="@id/open_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/popinsbold"/>
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@id/open_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:textSize="15dp"
+                    android:id="@+id/harga"
+                    android:fontFamily="@font/ofl"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hubungi"/>
+                <TextView
+                    android:id="@+id/nomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0856"/>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/whatsapp"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/instagram"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/facebook"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.LoginRegisterRelative"
+    tools:context="fragment.TransportasiFragment">
+    <ImageView
+        android:id="@+id/img_sliderkendaraan"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/iklanlomaden"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/jeniskendaraan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:hint="jenis kendaraan yang tersedia"
+        android:paddingLeft="70sp" />
+
+    <Button
+        android:id="@+id/button_mobil"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="Mobil" />
+    <Button
+        android:id="@+id/button_motor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="Motor" />
+    <Button
+        android:id="@+id/button_sepeda"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="Sepeda" />
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</LinearLayout>

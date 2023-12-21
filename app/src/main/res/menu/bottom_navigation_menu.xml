@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/baseline_content_paste_search_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/itemKos"
+        android:icon="@drawable/baseline_house_24"
+        android:title="Kos"/>
+    <item
+        android:id="@+id/itemTransportasi"
+        android:icon="@drawable/baseline_emoji_transportation_24"
+        android:title="Transportasi"/>
+    <item
+        android:id="@+id/itemProfile"
+        android:icon="@drawable/baseline_supervised_user_circle_24"
+        android:title="Profile"/>
+
+</menu>

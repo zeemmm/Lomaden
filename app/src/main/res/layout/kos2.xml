@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/baseline_arrow_back"
+            android:layout_width="30dp"
+            app:tint="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/kosan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kosan"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/aktif"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/bg"
+        android:layout_width="100dp"
+        android:padding="6dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktif"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/kosong"
+        android:layout_toRightOf="@id/aktif"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/bg2"
+        android:layout_width="100dp"
+        android:padding="6dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kosong"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/aktif"
+        android:layout_width="match_parent"
+        android:id="@+id/recy"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
